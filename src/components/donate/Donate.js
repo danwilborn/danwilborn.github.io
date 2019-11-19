@@ -1,19 +1,23 @@
 import React from 'react';
 import '../../App.css';
-import CustomFooter from '../footer/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './Donate.css';
 import DonateInfo from './DonateInfo';
+import ScrollAnimate from 'react-animate-on-scroll';
+import CustomFooter from '../footer/Footer';
+
 
 function Donate() {
 
     return(
     <div className="App">
-        <header>
-          <img src="./images/punky-2020-banner.png" className="banner-img"/>
-        </header>
-        <DonateInfo />
-        <CustomFooter/>
-      </div>
+      <img className="background-img" src="./images/punky-barn2-cropped.png" alt="BEAUTIFUL PUNKY HOLLOW"/>
+      <DonateInfo />
+      <footer>
+          <ScrollAnimate animateIn="fadeIn" animateOnce="true">
+              <CustomFooter/>
+          </ScrollAnimate>
+      </footer>
+    </div>
     );
 }
 

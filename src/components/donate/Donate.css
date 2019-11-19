@@ -1,0 +1,48 @@
+.donate-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 2em;
+}
+
+.row {
+  flex-direction: row;
+  margin-bottom: 20vh;
+}
+
+
+h3 {
+  margin: 1em;
+  font-size: 6vh;
+}
+
+
+
+  @media only screen and (max-width: 700px) {
+    h3 {
+        font-size: 18px;
+    }
+
+    .donate-page {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        padding-top: 10em;
+        margin-bottom: 10em;
+    }
+
+    .row {
+      align-self: center;
+      width: 100%;
+      margin-bottom: 2em;
+    }
+
+    .address {
+      width: 80%;
+    }
+
+  }

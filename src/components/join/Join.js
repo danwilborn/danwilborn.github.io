@@ -7,6 +7,11 @@ function JoinForm() {
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
 
+    const handleClick = () => {
+        setJoined(true);
+        //sendEmails(firstName, lastName, email);
+    };
+
     return (
         <div>
             {joined ? 
@@ -24,11 +29,11 @@ function JoinForm() {
                 <h1>
                 JOIN TEAM PUNKY HOLLOW
                 </h1>
-                <form action="">
-                    <input type="text" placeholder="First Name" className="input-name" required/> 
-                    <input type="text" placeholder="Last Name" className="input-name" required/> <br/>
-                    <input type="email" placeholder="Email" className="input-email" required/> <br/>
-                    <input type="submit" value="JOIN THE MOVEMENT" className="submit-btn" onClick={() => setJoined(true)} />
+                <form>
+                    <input type="text" placeholder="First Name" name="First Name" className="input-name" value={firstName} onChange={e => setFirstName(e.target.value)} required/> 
+                    <input type="text" placeholder="Last Name" name="Last Name" className="input-name" value={lastName} onChange={e => setLastName(e.target.value)} required/> <br/>
+                    <input type="email" placeholder="Email" name="Email" className="input-email" value={email} onChange={e => setEmail(e.target.value)} required/> <br/>
+                    <input type="submit" value="JOIN THE MOVEMENT" name="Email" className="submit-btn" onClick={() => handleClick()} />
                 </form>
             </div> 
             }
