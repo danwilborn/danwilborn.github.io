@@ -18,11 +18,9 @@ function Home() {
       <ScrollAnimation animateIn="fadeIn" animateOnce="true">
         <JoinForm />
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn" animateOnce="true">
-        <footer>
-          <CustomFooter/>
-        </footer>
-      </ScrollAnimation>
+      <footer>
+        <CustomFooter/>
+      </footer>
     </div>
   );
 }

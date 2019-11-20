@@ -13,9 +13,7 @@ function Donate() {
       <img className="background-img" src="./images/punky-barn2-cropped.png" alt="BEAUTIFUL PUNKY HOLLOW"/>
       <DonateInfo />
       <footer>
-          <ScrollAnimate animateIn="fadeIn" animateOnce="true">
-              <CustomFooter/>
-          </ScrollAnimate>
+        <CustomFooter/>
       </footer>
     </div>
     );

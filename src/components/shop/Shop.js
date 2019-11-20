@@ -105,9 +105,7 @@ function Shop() {
                 {showOrderDetails()}
             </div>
             <footer>
-                <ScrollAnimation animateIn="fadeIn" animateOnce="true">
-                    <CustomFooter />
-                </ScrollAnimation>
+                <CustomFooter />
             </footer>
         </div>
     );

@@ -32,7 +32,7 @@ function Links(props) {
                 <div className="about-txt-container">
                     <div className="txt-box">
                         <div className="txt txt-left-align">
-                            <ScrollAnimation animateIn="fadeIn">
+                            <ScrollAnimation animateIn="slideRight">
                                 <h1>The True Home of Miller Family Thanksgiving</h1>
                             </ScrollAnimation>
                         </div>
@@ -46,7 +46,7 @@ function Links(props) {
                 <div className="donate-txt-container">
                     <div className="txt-box">
                         <div className="txt txt-right-align">
-                            <ScrollAnimation animateIn="fadeIn">
+                            <ScrollAnimation animateIn="slideLeft">
                                 <h1>Take Thanksgiving Back To Its Roots</h1>
                             </ScrollAnimation>
                         </div>

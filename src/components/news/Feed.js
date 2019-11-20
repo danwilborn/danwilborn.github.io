@@ -6,7 +6,7 @@ const ThumbnailGrid = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 100%;
+    flex: 50%;
     margin: 4em;
 
     @media only screen and (max-width: 400px) {

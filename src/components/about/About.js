@@ -10,12 +10,8 @@ function About() {
     return(
         <div className="App">
             <AboutDisplay />
-            <ScrollAnimate animateIn="fadeIn" animateOnce="true">
-                <img className="background-img" src="./images/punky-sign-cropped-more.png" alt="BEAUTIFUL PUNKY HOLLOW"/>
-            </ScrollAnimate>
-            <ScrollAnimate animateIn="fadeIn" animateOnce="true">
-                <CustomFooter />
-            </ScrollAnimate>
+            <img className="background-img" src="./images/punky-sign-cropped-more.png" alt="BEAUTIFUL PUNKY HOLLOW"/>
+            <CustomFooter />
         </div>
     );
 }

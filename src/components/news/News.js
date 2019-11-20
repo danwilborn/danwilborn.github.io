@@ -3,6 +3,7 @@ import CustomFooter from '../footer/Footer';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Feed from './Feed';
 import styled from 'styled-components';
+import TwitterFeed from './Tweets';
 
 const NewsContainer = styled.div`
     display: flex;
@@ -17,11 +18,9 @@ function News() {
             <NewsContainer>
                 <Feed />
             </NewsContainer>
-            <ScrollAnimation animateIn="fadeIn" animateOnce="true">
-                <footer>
-                    <CustomFooter/>
-                </footer>
-            </ScrollAnimation>
+            <footer>
+                <CustomFooter/>
+            </footer>
         </div>
     );
 }
