@@ -12,12 +12,8 @@ function Home() {
   return (
     <div className="App">
       <HomeDisplay />
-      <ScrollAnimation animateIn="fadeIn" animateOnce="true">
-        <img src="./images/punky-2020-banner-2.png" className="banner-img-2" alt="PUNKY HOLLOW 2020"/>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn" animateOnce="true">
-        <JoinForm />
-      </ScrollAnimation>
+      <img src="./images/punky-2020-banner-2.png" className="banner-img-2" alt="PUNKY HOLLOW 2020"/>
+      <JoinForm />
       <footer>
         <CustomFooter/>
       </footer>
