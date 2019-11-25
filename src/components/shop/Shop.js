@@ -35,6 +35,16 @@ const OrderDetails = styled.div`
     }
 `
 
+const PhoneTextImage = styled.img`
+    width: 60%;
+    height: auto;
+
+    @media only screen and (max-width: 900px) {
+        width: 90%;
+    }
+`
+
+
 const ItemsContainer = styled.div`
     display: flex;
     flex-direction: row;
@@ -72,9 +82,7 @@ function Shop() {
         if (selected) {
             return (
                 <OrderDetails>
-                    At this time we are only accepting orders over the phone.
-                    <br />
-                    Please call 585-721-2966 for more details.
+                    <PhoneTextImage src="./images/phone-text.png" alt="phone number" />
                 </OrderDetails>
             );
         } else {

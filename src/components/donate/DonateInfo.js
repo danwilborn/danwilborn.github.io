@@ -24,7 +24,7 @@ const FadeIn = keyframes`
     }
 `
 
-const Address = styled.div`
+const AddressContainer = styled.div`
 
     width: 30vw;
     height: auto;
@@ -35,6 +35,11 @@ const Address = styled.div`
         width: 80%;
     }
 
+`
+
+const AddressImage = styled.img`
+    width: 80%;
+    height: auto;
 `
 
 const ListContainer = styled.div`
@@ -79,6 +84,14 @@ const DonateInfoContainer = styled.div`
     }
 `
 
+function Address() {
+    return(
+        <AddressContainer>
+            <AddressImage src="./images/address-text.png" alt="punky 2020 headquarters" />
+        </AddressContainer>
+    );
+}
+
 function DonateInfo() {
 
     return(
@@ -92,11 +105,7 @@ function DonateInfo() {
                     <div className="red-info">
                         Donations can be made to the following address:
                     </div>
-                    <Address>
-                        PUNKY FOR THANKSGIVING <br />
-                        5 PINE NEEDLES DR <br />
-                        PITTSFORD, NY 14534
-                    </Address>
+                    {Address()}
                     <div className="red-info-italics">
                         Please note that the Federal Elections Commission requires that we gather employer and occupation information from you, and without it we will be unable to accept your contribution
                     </div>
