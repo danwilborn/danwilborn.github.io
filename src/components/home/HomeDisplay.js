@@ -4,6 +4,15 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import styled from 'styled-components';
 
 
+const HomeHeader = styled.h1`
+    font-size: 2vw;
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 3vh;
+        text-align: center;
+    }
+`
+
 const LinkBtnContainer = styled.form`
     border: 2px solid #3c3b6e;
     height: 50px;
@@ -27,13 +36,13 @@ function Links(props) {
         <div className="info-container">
             <div className="about-container">
                 <div className="about-img-container">
-                    <img src="./images/punky-sign-cropped.png" className="about-img" alt="BEAUTIFUL PUNKY HOLLOW"/>
+                    <img src="./images/punky-sign-cropped-more.png" className="about-img" alt="BEAUTIFUL PUNKY HOLLOW"/>
                 </div>
                 <div className="about-txt-container">
                     <div className="txt-box">
                         <div className="txt txt-left-align">
                             <ScrollAnimation animateIn="slideRight">
-                                <h1>The True Home of Miller Family Thanksgiving</h1>
+                                <HomeHeader>The True Home of Miller Family Thanksgiving</HomeHeader>
                             </ScrollAnimation>
                         </div>
                         <ScrollAnimation animateIn="slideLeft">
@@ -47,7 +56,7 @@ function Links(props) {
                     <div className="txt-box">
                         <div className="txt txt-right-align">
                             <ScrollAnimation animateIn="slideLeft">
-                                <h1>Take Thanksgiving Back To Its Roots</h1>
+                                <HomeHeader>Take Thanksgiving Back To Its Roots</HomeHeader>
                             </ScrollAnimation>
                         </div>
                         <ScrollAnimation animateIn="slideRight">
@@ -56,7 +65,7 @@ function Links(props) {
                     </div>
                 </div>
                 <div className="donate-img-container">
-                    <img src="./images/punky-barn-cropped.png" className="donate-img" alt="BEAUTIFUL PUNKY HOLLOW"/>
+                    <img src="./images/punky-barn-cropped-more.png" className="donate-img" alt="BEAUTIFUL PUNKY HOLLOW"/>
                 </div>
             </div>
         </div>

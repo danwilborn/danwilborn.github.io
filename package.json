@@ -19,6 +19,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-sliding-pane": "^3.1.0",
+    "react-twitter-embed": "^3.0.3",
     "run": "^1.4.0",
     "sendmail": "^1.6.1",
     "styled-components": "^4.4.0"

@@ -8,6 +8,12 @@ import TwitterFeed from './Tweets';
 const NewsContainer = styled.div`
     display: flex;
     flex-direction: row;
+    
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
 `
 
 
@@ -17,6 +23,7 @@ function News() {
         <div className="App">
             <NewsContainer>
                 <Feed />
+                <TwitterFeed />
             </NewsContainer>
             <footer>
                 <CustomFooter/>

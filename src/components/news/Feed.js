@@ -21,7 +21,7 @@ function Feed() {
 
     return (
         <ThumbnailGrid>
-            <Thumbnail
+            {/* <Thumbnail
                 url="rally"
                 article="CAMPAIGN RALLY TO BE HELD AHEAD OF TOUR"
                 src="./images/pineneedles.png"
@@ -30,7 +30,7 @@ function Feed() {
             <Thumbnail
                 url="donations"
                 article="DONATIONS HIT RECORD HIGH"
-                src="./images/punky1.jpg"
+                src="./images/punky-sign.jpg"
                 blurb="Donations towards the Punky Hollow 2020 campaign have hit an all-time high, leading the way among all campaigns"
             />
             <Thumbnail
@@ -44,13 +44,13 @@ function Feed() {
                 article="CAMPAIGN CHAIRMAN ANNOUNCED"
                 src="./images/leader.jpg"
                 blurb="Gene Miller announced as Punky 2020 Campaign Chairman"
-            />
-            <Thumbnail
-                url="campaign"
+            /> */}
+            {/* <Thumbnail
+                url="https://punkyhollow.home.blog/23"
                 article="PUNKY HOLLOW ANNOUNCES 2020 CAMPAIGN"
                 src="./images/punky2.jpg"
                 blurb="Today the Punky Hollow team announced its campaign to host Thanksgiving in 2020"
-            />
+            /> */}
         </ThumbnailGrid>
     );
 }

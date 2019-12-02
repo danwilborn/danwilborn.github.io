@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ThumbnailContainer = styled.div`
+const ThumbnailContainer = styled.a`
     width: 400px;
     height: 300px;
     box-shadow: none;
@@ -75,7 +75,7 @@ const ReadMore = styled.label`
 function Thumbnail(props) {
 
     return (
-        <ThumbnailContainer>
+        <ThumbnailContainer href={props.url} target="_blank">
             <ThumbnailTitle>
                 <b>{props.article}</b>
             </ThumbnailTitle>
